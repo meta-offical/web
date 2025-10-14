@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<head>
+<title>Time Table</title>
+<style>
+ /* Style for the table */
+table {
+width: 100%;
+border-collapse: collapse;
+}
+th,td {
+border: 1px solid black;
+padding: 10px;
+text-align: center;
+}
+ /* Table header and footer styles */
+thead {
+ background-color: #f2a3b6;
+}
+tfoot {
+background-color: #f2a3b6;
+}
+ /* Highlighting lab and elective hours */
+.lab {
+background-color: #d3f9d8;
+}/* Row colors */
+tr:nth-child(odd) {
+ background-color: #f0f8ff;
+}
+tr:nth-child(even) {
+background-color: #e6e6fa;
+} 
+</style>
+</head>
+<body>
+<center><h1>5th Semester Class Time Table</h1></center>
+<table>
+<!-- Table header -->
+<thead>
+<tr>
+<th>Day/Time</th>
+<th>9:00 - 10:00</th>
+<th>10:00 - 11:00</th>
+<th>11:00 - 11:10</th>
+<th>11:10 - 12:10</th>
+<th>12:10 - 1:10</th>
+<th>1:10 - 1:40</th>
+<th>1:40 - 2:40</th>
+<th>2:40 - 3:40</th>
+<th>3:40 - 4:40</th>
+</tr>
+</thead>
+<!-- Table body -->
+<tbody>
+<tr>
+<td>Monday</td>
+<td class="lab" colspan="2">CN Lab / Web Lab</td>
+<td rowspan="5">Break</td>
+<td>AI</td>
+<td>RM</td>
+<td rowspan="5">Lunch</td>
+<td>SE</td>
+<td>CN</td>
+<td>AI</td>
+</tr>
+<tr>
+<td>Tuesday</td>
+<td>RM</td>
+<td>EVS</td>
+<td>TC</td>
+<td>SE</td>
+<td>CN</td>
+<td class="lab" colspan="2">Mini Project</td>
+</tr>
+<tr>
+<td>Wednesday</td>
+<td>EVS</td>
+<td>AI</td>
+<td>CN</td>
+<td>TC</td>
+<td class="lab" colspan="3">CN Lab / Web Lab</td>
+</tr>
+<tr>
+<td>Thursday</td>
+<td>TC</td>
+<td>SE</td>
+<td>RM</td>
+<td>AI</td>
+<td>SE</td>
+<td>TC</td>
+<td>AI</td>
+</tr>
+<tr>
+<td>Friday</td>
+<td>CN</td>
+<td>TC</td>
+<td>AI</td>
+<td>RM</td>
+<td class="lab" colspan="2">Mini Project</td>
+<td>Mentoring</td>
+</tr>
+</tbody>
+<!-- Table footer -->
+<tfoot>
+<tr>
+<td colspan="10">5th Semester Class Timetable – Academic
+ Year 2025-26</td>
+</tr>
+</tfoot>
+</table>
+</body>
+</html>

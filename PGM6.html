@@ -1,0 +1,43 @@
+<html> 
+<head> 
+<style> 
+table ,td,th{ 
+border:solid black; 
+text-align:left; 
+} 
+</style> 
+<script type='text/javascript'> 
+function calc(ch) 
+{ 
+var num1=parseFloat(document.getElementById('num1').value); 
+var num2=parseFloat(document.getElementById('num2').value); 
+switch(ch) 
+{ 
+case '+': var sum=num1+num2; 
+alert("the sum is"+sum); 
+break; 
+case '-':  var dif=num1-num2 ; 
+alert("the diff is"+dif); 
+break; 
+case '*': var mul =num1*num2; 
+alert("the mul is"+mul); 
+break; 
+case '/':  var div=num1/num2 ; 
+alert("the div is"+div); 
+break; 
+}
+} 
+</script> 
+</head> 
+<body> 
+<table> 
+<caption ><h2> SIMPLE CALCULATOR </h2></caption> 
+<tr><td> first number</td><td><input type="text" id ="num1"/></td> 
+<td>second number</td><td><input type="text" id="num2"/></td></tr> 
+<tr><td><input type="button" name ="ADD" value ='add' onclick="calc('+')"/></td> 
+<td><input type="button" name ="SUB" value ='sub' onclick="calc('-')"/></td> 
+<td><input type="button" name ="MUL" value ='*' onclick="calc('*')"/></td> 
+<td><input type="button" name ="DIV" value ='/' onclick="calc('/')"/></td></tr> 
+</table> 
+</body> 
+</html>
