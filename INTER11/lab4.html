@@ -1,0 +1,151 @@
+<!DOCTYPE html> 
+ 
+<head> 
+    <title>Registra on Form | vtucode</title> 
+    <style> 
+        body { 
+            font-family: Arial, sans-serif; 
+            background-color: #f0f4f8; 
+            margin: 0; 
+            padding: 20px; 
+            display: flex; 
+            jus fy-content: center; 
+            align-items: center; 
+            min-height: 100vh; 
+        } 
+ 
+        .container { 
+            width: 100%; 
+            max-width: 600px; 
+            background-color: #fff; 
+            padding: 20px; 
+            border-radius: 8px; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+            display: flex; 
+            flex-direc on: column; 
+            gap: 20px; 
+        } 
+ 
+        h2 { 
+            text-align: center; 
+            color: #333; 
+            margin: 0; 
+        } 
+ 
+        .form-group { 
+            display: flex; 
+            flex-direc on: column; 
+            gap: 5px; 
+            margin-bo om: 10px; 
+        } 
+ 
+        label { 
+            font-size: 14px; 
+            color: #555; 
+        } 
+ 
+        input[type="text"], 
+        input[type="email"], 
+        input[type="password"], 
+        input[type="date"], 
+        select, 
+        textarea { 
+            padding: 10px; 
+            border: 1px solid #ccc; 
+            border-radius: 4px; 
+            font-size: 14px; 
+        } 
+ 
+        .gender-op ons { 
+            display: flex; 
+            gap: 10px; 
+            align-items: center; 
+        } 
+ 
+        input[type="submit"], 
+        input[type="reset"] { 
+            padding: 10px 20px; 
+            border: none; 
+            border-radius: 4px; 
+            cursor: pointer; 
+            font-size: 16px; 
+            flex: 1; 
+        } 
+ 
+        .bu on-group { 
+            display: flex; 
+            gap: 10px; 
+            jus fy-content: center; 
+        } 
+ 
+        input[type="submit"] { 
+            background-color: #4CAF50; 
+            color: white; 
+        } 
+ 
+        input[type="reset"] { 
+            background-color: #f44336; 
+            color: white; 
+        } 
+ 
+        .form-group textarea { 
+            margin-bo om: 10px; 
+        } 
+    </style> 
+</head> 
+ 
+<body> 
+    <div class="container"> 
+        <h2>Registra on Form</h2> 
+        <form ac on="#" method="post"> 
+            <div class="form-group"> 
+                <label for="firstName">First Name:</label> 
+                <input type="text" id="firstName" name="firstName" required> 
+            </div> 
+            <div class="form-group"> 
+                <label for="lastName">Last Name:</label> 
+                <input type="text" id="lastName" name="lastName" required> 
+            </div> 
+            <div class="form-group"> 
+                <label for="email">Email:</label> 
+                <input type="email" id="email" name="email" required> 
+            </div> 
+            <div class="form-group"> 
+                <label for="password">Password:</label> 
+                <input type="password" id="password" name="password" required> 
+            </div> 
+            <div class="form-group"> 
+                <label for="dob">Date of Birth:</label> 
+                <input type="date" id="dob" name="dob"> 
+            </div> 
+            <div class="form-group"> 
+                <label>Gender:</label> 
+                <div class="gender-op ons"> 
+                    <input type="radio" id="male" name="gender" value="male"> 
+                    <label for="male">Male</label> 
+                    <input type="radio" id="female" name="gender" value="female"> 
+                    <label for="female">Female</label> 
+                </div> 
+            </div> 
+            <div class="form-group"> 
+                <label for="country">Country:</label> 
+                <select id="country" name="country"> 
+                    <op on value="usa">USA</op on> 
+                    <op on value="canada">Canada</op on> 
+                    <op on value="uk">UK</op on> 
+                    <op on value="india">India</op on> 
+                </select> 
+            </div> 
+            <div class="form-group"> 
+                <label for="bio">Bio:</label> 
+                <textarea id="bio" name="bio" rows="4"></textarea> 
+            </div> 
+            <div class="bu on-group"> 
+                <input type="submit" value="Register"> 
+                <input type="reset" value="Reset"> 
+            </div> 
+        </form> 
+    </div> 
+</body> 
+ 
+</html> 
